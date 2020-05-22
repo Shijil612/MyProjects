@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<display-name>BankAPP</display-name>
+	<filter>
+		<description>
+		</description>
+		<display-name>ChangepassswordFilter</display-name>
+		<filter-name>ChangepassswordFilter</filter-name>
+		<filter-class>com.abc.bankapp.ChangepassswordFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>ChangepassswordFilter</filter-name>
+		<servlet-name>changepasssword</servlet-name>
+	</filter-mapping>
+	
+	
+	
+	<servlet>
+		<description>
+		</description>
+		<display-name>Login</display-name>
+		<servlet-name>Login</servlet-name>
+		<servlet-class>com.abc.bankapp.Login</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>CheckBalance</display-name>
+		<servlet-name>CheckBalance</servlet-name>
+		<servlet-class>com.abc.bankapp.CheckBalance</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>checkBalance</display-name>
+		<servlet-name>checkBalance</servlet-name>
+		<servlet-class>com.abc.bankapp.checkBalance</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>changepasssword</display-name>
+		<servlet-name>changepasssword</servlet-name>
+		<servlet-class>com.abc.bankapp.changepasssword</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>Transfer</display-name>
+		<servlet-name>Transfer</servlet-name>
+		<servlet-class>com.abc.bankapp.Transfer</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Login</servlet-name>
+		<url-pattern>/Login</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CheckBalance</servlet-name>
+		<url-pattern>/CheckBalance</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>checkBalance</servlet-name>
+		<url-pattern>/checkBalance</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>changepasssword</servlet-name>
+		<url-pattern>/changepasssword</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Transfer</servlet-name>
+		<url-pattern>/Transfer</url-pattern>
+	</servlet-mapping>
+
+		<welcome-file-list>
+		<welcome-file>login.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
